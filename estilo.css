@@ -1,0 +1,193 @@
+/* ====== GENERAL ====== */
+
+body{
+    background: #111111;
+    color: #f5f5f5;
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 40px 0;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* ====== CONTENEDOR ====== */
+
+.productos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+
+/* ====== TARJETAS ====== */
+
+.card{
+    background:#1c1c1c;
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,.5);
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,255,170,.25);
+
+}
+
+.card-header{
+
+    background:linear-gradient(90deg,#00c853,#00bfa5);
+
+    color:white;
+
+    border:none;
+
+}
+
+.card-title{
+
+    margin:0;
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+}
+
+.card-body{
+
+    color:#ddd;
+
+}
+
+.card-body p{
+
+    margin-bottom:12px;
+
+}
+
+.card-footer{
+
+    background:#161616;
+
+    border-top:1px solid #333;
+
+}
+
+/* ====== BADGES ====== */
+
+.badge{
+
+    padding:10px 18px;
+
+    font-size:.9rem;
+
+    border-radius:30px;
+
+}
+
+/* ====== PRECIO ====== */
+
+.precio{
+
+    color:#00e676;
+
+    font-weight:bold;
+
+    font-size:1.2rem;
+
+}
+
+/* ====== PUNTAJE ====== */
+
+.estrellas{
+
+    color:#FFD54F;
+
+    font-size:1.1rem;
+
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media(max-width:768px){
+
+    .productos{
+
+        padding:10px;
+
+    }
+
+}
+/* ===== NAVBAR ===== */
+
+.navbar-custom{
+    background:#0f0f0f;
+    border-bottom:1px solid #2b2b2b;
+}
+
+.navbar-brand{
+    color:#00e676 !important;
+    font-size:1.7rem;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#d6d6d6 !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#00e676 !important;
+}
+
+.navbar{
+    box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+.hero{
+
+    height:280px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+        url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a")
+        center/cover;
+
+}
+
+.hero h1{
+
+    font-size:3.5rem;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.hero p{
+
+    color:#c7c7c7;
+
+    font-size:1.2rem;
+
+}
